@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import main.NumberField?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="203.0" prefWidth="345.0" xmlns="http://javafx.com/javafx/8.0.72" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfaceViewControllers.headers.headerBasculeController">
+   <children>
+      <VBox layoutY="24.0" prefHeight="64.0" prefWidth="345.0" spacing="30.0">
+         <children>
+            <HBox prefHeight="65.0" prefWidth="345.0" spacing="15.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Label text="Largeur (m)">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <NumberField fx:id="width" max="0.0" min="0.0" />
+               </children>
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+            </HBox>
+            <HBox prefHeight="116.0" prefWidth="168.0" spacing="10.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Label text="Hauteur (m)">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <NumberField fx:id="height" max="0.0" min="0.0" />
+               </children>
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+            </HBox>
+            <HBox prefHeight="116.0" prefWidth="345.0" spacing="20.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Label text="Masse (kg)">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <NumberField fx:id="mass" max="0.0" min="0.0" />
+               </children>
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</Pane>

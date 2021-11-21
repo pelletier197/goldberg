@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+
+
+<ImageView fx:id="dominoView" fitHeight="111.0" fitWidth="29.0" onDragDetected="#notifyDragged" onMousePressed="#notifyPressed" pickOnBounds="true" xmlns="http://javafx.com/javafx/8.0.72" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gameObservableControllers.DominoController">
+   <image>
+      <Image url="@../../resources/images/domino.png" />
+   </image>
+</ImageView>

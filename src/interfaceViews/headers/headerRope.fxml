@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import main.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import main.NumberField?>
+
+
+<VBox prefHeight="108.0" prefWidth="485.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfaceViewControllers.headers.headerRopeController">
+   <children>
+      		<HBox alignment="CENTER_LEFT" prefHeight="53.0" prefWidth="485.0" spacing="10.0">
+      			<children>
+      				<Label text="Longueur de la code (m)">
+      					<font>
+      						<Font size="20.0" />
+      					</font>
+      				</Label>
+            <NumberField fx:id="height" prefHeight="25.0" prefWidth="97.0" />
+      			</children>
+      			<padding>
+      				<Insets left="10.0" right="10.0" />
+      			</padding>
+      		</HBox>
+   </children>
+</VBox>

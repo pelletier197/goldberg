@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="22.0" prefWidth="238.0" xmlns="http://javafx.com/javafx/8.0.72" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gameObservableControllers.StickBasculeController">
+   <children>
+      <ImageView fx:id="basculeView" fitHeight="22.0" fitWidth="238.0" layoutX="1.0" onDragDetected="#notifyDragged" onMousePressed="#notifyPressed" pickOnBounds="true">
+         <image>
+            <Image url="@../../resources/images/stickBascule.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="bearingView" fitHeight="22.0" fitWidth="25.0" layoutX="103.0" onMouseClicked="#notifyPressed" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resources/images/bearing.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

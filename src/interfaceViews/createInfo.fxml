@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="699.0" prefWidth="1035.0" xmlns="http://javafx.com/javafx/8.0.72" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfaceViewControllers.createInfoController">
+	<bottom>
+		<AnchorPane fx:id="image" prefHeight="97.0" prefWidth="790.0" BorderPane.alignment="CENTER">
+			<children>
+				<Button fx:id="previous" layoutX="100.0" layoutY="3.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#back" prefHeight="83.0" prefWidth="179.0" text="Précédent" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0">
+					<graphic>
+						<ImageView fitHeight="73.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+							<image>
+								<Image url="@../../resources/images/fleche_gauche.png" />
+							</image>
+						</ImageView>
+					</graphic>
+					<font>
+						<Font name="System Bold" size="18.0" />
+					</font>
+				</Button>
+				<Button fx:id="suivant" layoutX="1184.0" layoutY="3.0" minWidth="-Infinity" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#next" prefHeight="83.0" prefWidth="179.0" text="Suivant" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0">
+					<graphic>
+						<ImageView accessibleText=" " fitHeight="73.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+							<image>
+								<Image url="@../../resources/images/fleche_droite.png" />
+							</image>
+						</ImageView>
+					</graphic>
+					<font>
+						<Font name="System Bold" size="18.0" />
+					</font>
+				</Button>
+			</children>
+		</AnchorPane>
+	</bottom>
+	<top>
+		<Label fx:id="title" alignment="CENTER" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" prefHeight="113.0" prefWidth="921.0" style="-fx-text-fill: #00ace6;" text="Créer un niveau" textAlignment="CENTER" BorderPane.alignment="CENTER">
+			<font>
+				<Font size="70.0" />
+			</font>
+		</Label>
+	</top>
+   <center>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+      		<VBox alignment="CENTER" minWidth="-Infinity" prefHeight="489.0" prefWidth="542.0" HBox.hgrow="SOMETIMES">
+      			<children>
+                  <Label alignment="CENTER" prefHeight="41.0" prefWidth="821.0" style="-fx-text-fill: #b91e1e;" text="Informations sur le niveau" textFill="#b91e1e">
+                     <font>
+                        <Font name="System Bold" size="31.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER_LEFT" prefHeight="63.0" prefWidth="740.0" VBox.vgrow="NEVER">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="25.0" right="25.0" top="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <Label minWidth="-Infinity" prefHeight="63.0" prefWidth="192.0" style="-fx-text-fill: #00ace6;" text="Nom du niveau" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+            				<TextField fx:id="levelName" alignment="BOTTOM_LEFT" maxWidth="1.7976931348623157E308" prefHeight="42.0" prefWidth="437.0" HBox.hgrow="ALWAYS">
+            					<font>
+            						<Font size="20.0" />
+            					</font>
+            				</TextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="73.0" prefWidth="836.0" VBox.vgrow="NEVER">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="25.0" right="25.0" top="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <Label minWidth="-Infinity" prefHeight="73.0" prefWidth="190.0" style="-fx-text-fill: #00ace6;" text="Nom du créateur" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+            				<TextField fx:id="creator" maxWidth="1.7976931348623157E308" prefHeight="44.0" prefWidth="566.0" HBox.hgrow="ALWAYS">
+            					<font>
+            						<Font size="20.0" />
+            					</font>
+            				</TextField>
+                     </children>
+                  </HBox>
+                  <Label alignment="CENTER" prefHeight="39.0" prefWidth="790.0" style="-fx-text-fill: #b91e1e;" text="Informations sur le monde" textFill="#b91e1e">
+                     <font>
+                        <Font name="System Bold" size="31.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="56.0" prefWidth="985.0" VBox.vgrow="NEVER">
+                     <children>
+                        <Label prefHeight="36.0" prefWidth="304.0" style="-fx-text-fill: #00ace6;" text="Choix de Planète (gravité)" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <ComboBox fx:id="planetBox" prefHeight="48.0" prefWidth="327.0" />
+                     </children>
+                     <VBox.margin>
+                        <Insets left="25.0" right="25.0" top="15.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <Label style="-fx-text-fill: #b91e1e;" text="Informations sur les bordures">
+                     <font>
+                        <Font name="System Bold" size="31.0" />
+                     </font>
+                  </Label>
+                  <GridPane fx:id="sizeGrid" hgap="30.0" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="77.0" prefWidth="542.0">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="468.0" minWidth="10.0" prefWidth="381.0" />
+                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="576.0" minWidth="10.0" prefWidth="379.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="NEVER" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="16.0" prefWidth="351.0" style="-fx-text-fill: #00ace6;" text="Largeur">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" maxWidth="1.7976931348623157E308" style="-fx-text-fill: #00ace6;" text="Hauteur" textAlignment="CENTER" GridPane.columnIndex="1">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </GridPane>
+                  <HBox alignment="CENTER" spacing="25.0">
+                     <children>
+                        <RadioButton fx:id="teleportableBordrersRadio" mnemonicParsing="false" prefHeight="36.0" style="-fx-text-fill: #00ace6;" text="Bordures Téléportables">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </RadioButton>
+                        <RadioButton fx:id="withBorderRadio" mnemonicParsing="false" selected="true" style="-fx-text-fill: #00ace6;" text="Avec Bordures">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </RadioButton>
+                     </children>
+                  </HBox>
+      			</children>
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+      		</VBox>
+            <StackPane fx:id="mapVisualizer" minWidth="-Infinity" prefHeight="489.0" prefWidth="491.0" HBox.hgrow="SOMETIMES">
+               <children>
+                  <ImageView fx:id="background" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" />
+                  <ImageView fx:id="borders" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" />
+               </children></StackPane>
+         </children>
+      </HBox>
+   </center>
+</BorderPane>

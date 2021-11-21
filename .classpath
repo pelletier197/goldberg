@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="resources"/>
+	<classpathentry kind="lib" path="libraries/dyn4j-3.2.0.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="http://docs.dyn4j.org/v3.2.1/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="ScreenController"/>
+	<classpathentry kind="lib" path="libraries/Utils.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

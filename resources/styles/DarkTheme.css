@@ -1,0 +1,189 @@
+
+
+
+.root {
+	
+	
+	
+	-fx-background-color: rgb(32,32,32) ;
+	
+}
+
+.background {
+/* 	-fx-background-image:url("/images/skull_texture2.jpg");*/
+	-fx-background-color:black;
+	/*-fx-background-repeat: stretch;
+	-fx-background-position:center;
+	-fx-background-size:cover;*/
+}
+
+.progress-indicator .percentage{
+	-fx-fill:grey;
+}
+.pauseButton {
+	-fx-background-image : url("/images/pause.png");
+	-fx-background-size:stretch;
+	
+	-fx-border-radius:5.0em;
+	-fx-content-display:graphic-only;
+
+	
+}
+.playButton {
+	-fx-background-image : url("/images/play.png");
+	
+	
+	-fx-content-display:graphic-only;
+	-fx-background-size:stretch;
+	
+	
+}
+#next{
+	-fx-background-image : url("/images/forward.png");
+	-fx-background-size:stretch;
+	
+	-fx-content-display:graphic-only;
+	-fx-background-repeat:stretch;
+}
+#previous{
+-fx-background-image : url("/images/backward.png");
+	-fx-background-size:stretch;
+	
+	-fx-content-display:graphic-only;
+	-fx-background-repeat:stretch;
+}
+
+.pauseButton:hover {
+	-fx-background-image : url("/images/pause.png");
+	-fx-background-size:stretch;
+	-fx-content-display:graphic-only;
+	-fx-background-repeat:stretch;
+	-fx-scale-x:1.05;
+	-fx-scale-y:1.05;
+	
+}
+.playButton:hover {
+	-fx-background-image : url("/images/play.png");
+	-fx-border-radius:1000.0;
+	-fx-content-display:graphic-only;
+	-fx-background-size:stretch;
+	-fx-scale-x:1.05;
+	-fx-scale-y:1.05;
+	
+	
+}
+#next:hover{
+	-fx-background-image : url("/images/forward.png");
+	-fx-background-size:stretch;
+	-fx-content-display:graphic-only;
+	-fx-background-repeat:stretch;
+	-fx-scale-x:1.05;
+	-fx-scale-y:1.05;
+}
+#previous:hover{
+-fx-background-image : url("/images/backward.png");
+	-fx-background-size:stretch;
+	-fx-content-display:graphic-only;
+	-fx-background-repeat:stretch;
+	-fx-scale-x:1.05;
+	-fx-scale-y:1.05;
+}
+.list-cell-background{
+	-fx-border-width:0.0 0.0 2.0 0.0;
+	-fx-border-color:black;
+}
+
+.list-cell-songNameLabel{
+	-fx-font-family:Verdana;
+	-fx-font-weight:bold;
+	-fx-font-size:14.0;
+}
+
+#random{
+	-fx-background-image : url("/images/random.png");
+	-fx-background-size:stretch;
+	-fx-content-display:graphic-only;
+	-fx-background-repeat:stretch;
+}
+#normal{
+	-fx-background-image : url("/images/normal.png");
+	-fx-background-size:stretch;	
+	-fx-content-display:graphic-only;
+	-fx-background-repeat:stretch;
+}
+#repeat{
+	-fx-background-image : url("/images/repeat.png");
+	-fx-background-size:stretch;
+	-fx-content-display:graphic-only;
+	-fx-background-repeat:stretch;
+}
+
+#random:selected{
+	-fx-background-image : url("/images/random-selected.png");
+	-fx-background-size:stretch;
+	-fx-content-display:graphic-only;
+	-fx-background-repeat:stretch;
+	-fx-scale-x:1.3;
+	-fx-scale-y:1.3;
+}
+#normal:selected{
+	-fx-background-image : url("/images/normal-selected.png");
+	-fx-background-size:stretch;
+	-fx-content-display:graphic-only;
+	-fx-background-repeat:stretch;
+	-fx-scale-x:1.3;
+	-fx-scale-y:1.3;
+}
+#repeat:selected{
+	-fx-background-image : url("/images/repeat-selected.png");
+	-fx-background-size:stretch;
+	-fx-content-display:graphic-only;
+	-fx-background-repeat:stretch;
+	-fx-scale-x:1.3;
+	-fx-scale-y:1.3;
+}
+
+.soundIcon-on{
+	-fx-image:url("/images/sound-on.png");
+}
+soundIcon-off{
+	-fx-image:url("/images/sound-mute.png");
+}
+
+.soundIcon-on:hover{
+	-fx-image:url("/images/sound-on.png");
+	-fx-scale-x:1.1;
+	-fx-scale-y:1.1;
+}
+soundIcon-off:hover{
+	-fx-image:url("/images/sound-mute.png");
+	-fx-scale-x:1.1;
+	-fx-scale-y:1.1;
+}
+.music-list-cell:selected{
+	-fx-background-color:rgb(160.0, 0.0, 0.0);
+}
+.music-list-view{
+	
+}
+.music-list-view-letter{
+	-fx-text-fill:rgb(160.0, 0.0, 0.0);
+	-fx-font-weight:bold;
+	-fx-font-size:14.0;
+}
+.searchButton{
+	
+	-fx-background-size:stretch;
+	-fx-background-repeat:no-repeat;
+}
+.searchButton:hover{
+	-fx-background-size:stretch;
+	-fx-background-repeat:no-repeat;
+	-fx-opacity:0.6;
+}
+
+.research-toggle:selected{
+	-fx-border-radius:3.0;
+	-fx-border-color:rgb(160.0, 0.0, 0.0);
+	-fx-text-fill:rgb(160.0, 0.0, 0.0);
+}

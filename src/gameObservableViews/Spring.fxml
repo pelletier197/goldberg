@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="background" minHeight="-Infinity" minWidth="-Infinity" prefHeight="115.0" prefWidth="140.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gameObservableControllers.SpringController">
+   <children>
+      <ImageView fx:id="plateView" fitHeight="107.0" fitWidth="51.0" layoutX="99.0" onDragDetected="#notifyDragged" onMouseClicked="#switchLock" onMousePressed="#notifyPressed" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resources/images/SpringPlate.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="springView" fitHeight="52.0" fitWidth="76.0" layoutX="23.0" layoutY="31.0" onDragDetected="#notifyDragged" onMouseClicked="#switchLock" onMousePressed="#notifyPressed" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resources/images/SpringPetit.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="bottomView" fitHeight="80.0" fitWidth="19.0" layoutX="6.0" layoutY="13.0" onDragDetected="#notifyDragged" onMouseClicked="#switchLock" onMousePressed="#notifyPressed" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resources/images/SpringBase.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import main.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import main.NumberField?>
+
+
+<VBox xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfaceViewControllers.headers.headerSpringController">
+   <children>
+      <HBox prefHeight="0.0" prefWidth="345.0" spacing="10.0">
+         <children>
+            <Label text="Constante de rappel (k)">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <NumberField fx:id="springConstant" prefHeight="25.0" prefWidth="99.0" />
+         </children>
+         <padding>
+            <Insets left="10.0" right="10.0" />
+         </padding>
+      </HBox>
+      <HBox prefHeight="0.0" prefWidth="345.0" spacing="10.0">
+         <children>
+            <Label prefHeight="30.0" prefWidth="196.0" text="Détonateur">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </HBox.margin>
+            </Label>
+            <CheckBox fx:id="detonateur" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="30.0" prefWidth="102.0" />
+         </children>
+      </HBox>
+   </children>
+</VBox>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" maxHeight="150.0" maxWidth="249.0" prefHeight="131.0" prefWidth="215.0" xmlns="http://javafx.com/javafx/8.0.72" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfaceViewControllers.ItemBoxController">
+   <children>
+      <ImageView fx:id="image" fitHeight="104.0" fitWidth="155.0" pickOnBounds="true" preserveRatio="true" />
+      <HBox spacing="20.0">
+         <children>
+            <Label fx:id="name" style="-fx-text-fill: BLACK; -fx-font-weight: BOLD; -fx-font-size: 18;" text="nom" />
+         </children>
+         <VBox.margin>
+            <Insets left="10.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+</VBox>
